@@ -1,0 +1,28 @@
+:root {
+    /* данный индекс будет использоваться для адаптации текста и логотипа
+    под пропорции экрана */
+    --index: calc(1vw + 1vh);
+    /* Для более плавной анимации зададим переменную */
+    --transition: .5s cubic-bezier(0.05, 0.05, 0.00, 1.00);
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    font-size: 2.5rem;
+    flex: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px;
+    /* height: calc(var(--index) * 7); */
+    background-color: rgb(35, 151, 253);
+    transition: var(--transition);
+}
+
+.button__wrapper:hover {
+    background-color: rgb(110, 187, 255);
+    transition: var(--transition);
+}
